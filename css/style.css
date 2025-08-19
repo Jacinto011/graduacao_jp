@@ -1,0 +1,286 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --azul-principal: #1a4b8c;
+            --azul-escuro: #0d2d59;
+            --azul-claro: #3475c9;
+            --dourado: #d4af37;
+            --dourado-claro: #f1e5ac;
+            --branco: #ffffff;
+            --cinza-claro: #f5f5f5;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(135deg, #f9f9f9 0%, #e6f0ff 100%);
+            color: #1a3c6e;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .invitation-card {
+            background: linear-gradient(to bottom, #ffffff 85%, #f4f4f4 100%);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .gold-border {
+            border: 3px solid #d4af37;
+            border-radius: 15px;
+            padding: 5px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .ucm-logo {
+            max-width: 180px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.8rem;
+            color: #1a3c6e;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.2rem;
+            color: #d4af37;
+            margin-bottom: 25px;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #d4af37, transparent);
+            margin: 25px 0;
+        }
+
+        .details {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .details p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .time-place {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0;
+            gap: 20px;
+        }
+
+        .location-image-container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .location-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid var(--dourado);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .event {
+            background: linear-gradient(135deg, var(--dourado-claro) 0%, var(--dourado) 100%);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            color: var(--azul-escuro);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid var(--dourado);
+        }
+
+        .event h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--azul-escuro);
+        }
+
+        .event p {
+            margin: 12px 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .rsvp-form {
+            background: rgba(26, 60, 110, 0.05);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .rsvp-form h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1a3c6e;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1a3c6e;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+        }
+
+        button {
+            background: linear-gradient(to right, #1a3c6e, #2a5caa);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto 0;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #2a5caa, #3a7cee);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .companion-field {
+            display: none;
+            margin-top: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #1a3c6e;
+            font-style: italic;
+        }
+
+        .decoration {
+            position: absolute;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .decoration.top-left {
+            top: 20px;
+            left: 20px;
+            font-size: 5rem;
+            transform: rotate(-30deg);
+        }
+
+        .decoration.bottom-right {
+            bottom: 20px;
+            right: 20px;
+            font-size: 5rem;
+            transform: rotate(30deg);
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background-color: #d4edda;
+            color: #155724;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .error-message {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background-color: #f8d7da;
+            color: #721c24;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .location-image {
+                height: 200px;
+            }
+
+            .event {
+                padding: 20px;
+            }
+
+            .event h3 {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .invitation-card {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .time-place {
+                flex-direction: column;
+            }
+        }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite de Graduação - Jacinto</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&family=Cinzel:wght@400;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="gold-border">
+            <div class="invitation-card">
+                <div class="decoration top-left">🎓</div>
+                <div class="decoration bottom-right">🌟</div>
+
+                <div class="header">
+                    <img src="https://th.bing.com/th/id/R.eecf84f85fb6629f3a1aed1740588c24?rik=oJo2u47OtabPlA&riu=http%3a%2f%2fwww.ucm.ac.mz%2fwp-content%2fuploads%2f2020%2f10%2flog2-768x768-1.png&ehk=uwb5fPiySKpsJzg5r%2b0Xp8N%2fLK4Lgq1RBqydAFo3XLo%3d&risl=&pid=ImgRaw&r=0"
+                        alt="Logo UCM" class="ucm-logo">
+                    <h1>Convite de Graduação</h1>
+                    <h2>Jacinto de Manave Jacinto Patricio</h2>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="details">
+                    <p>É com grande alegria que convido você para celebrar</p>
+                    <p>a conclusão desta importante jornada académica</p>
+                    <p class="highlight">5 de Setembro de 2023</p>
+                </div>
+
+                <div class="time-place">
+                    <div class="location-image-container">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/01/e2/d4/19/bar.jpg"
+                            alt="Restaurante 2+1" class="location-image">
+                    </div>
+
+                    <div class="event">
+                        <h3>Receção de Confraternização</h3>
+                        <p>⏰ 15 horas</p>
+                        <p>📍 Restaurante 2+1</p>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="rsvp-form">
+                    <h3>Confirmação de Presença</h3>
+                    <form id="rsvpForm">
+                        <div class="form-group">
+                            <label for="name">Nome completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="companion">Você estará acompanhado?</label>
+                            <select id="companion" name="companion" required onchange="toggleCompanionField()">
+                                <option value="no">Não</option>
+                                <option value="yes">Sim</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group companion-field" id="companionField">
+                            <label for="companionName">Nome do acompanhante</label>
+                            <input type="text" id="companionName" name="companionName">
+                        </div>
+
+                        <div class="loading" id="loading">
+                            <p>Enviando confirmação...</p>
+                        </div>
+
+                        <div class="success-message" id="successMessage">
+                            <p>Obrigado por confirmar sua presença! Entraremos em contacto em breve.</p>
+                        </div>
+
+                        <div class="error-message" id="errorMessage">
+                            <p>Ocorreu um erro ao enviar sua confirmação. Por favor, tente novamente.</p>
+                        </div>
+
+                        <button type="submit">Confirmar Presença</button>
+                    </form>
+                </div>
+
+                <div class="footer">
+                    <p>Sua presença é muito importante para mim!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
